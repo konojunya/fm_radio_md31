@@ -1,6 +1,7 @@
 html, body {
   width: 100%;
   height: 100%;
+  min-width: 440px;
 }
 
 * {
@@ -11,11 +12,143 @@ html, body {
 
 header {
   width: 100%;
+  background-color: #181818;
+  color: white;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
-header img {
+header h1 {
+  margin-left: 20px;
+}
+
+#play {
+  width: 100%;
+}
+
+#play .img {
+  position: relative;
+  width: 100%;
+}
+
+#play img {
   display: block;
-  width: 40%;
-  margin-left: 10px;
-  margin-top: 10px;
+  width: 100%;
+}
+
+#play p {
+  position: absolute;
+  bottom: 5%;
+  left: 20px;
+  color: white;
+  letter-spacing: 3px;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+#link {
+  width: 100%;
+  display: flex;
+  background-color: #46B8D3;
+}
+
+#link .text {
+  width: 50%;
+  padding: 10px;
+  position: relative;
+}
+
+#link .text p {
+  color: white;
+  letter-spacing: 3px;
+  font-size: .9rem;
+  line-height: 1.9;
+}
+
+#link .text a {
+  color: white;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+
+#link .img {
+  width: 50%;
+}
+
+#link .img img {
+  display: block;
+  width: 100%;
+}
+
+#what-new {
+  width: 100%;
+  background-color: #FFF8EA;
+  display: flex;
+  flex-direction: column;
+}
+
+.content-title {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    text-align: center; /* for no-flexbox browsers */
+    font-size: 2rem;
+    font-weight: normal;
+    letter-spacing: 0.5rem;
+    text-align: center;
+    color: rgba(0,0,0,0.87);
+    margin: 1rem;
+}
+.content-title:before,
+.content-title:after {
+    border-top: 2px solid;
+    content: "";
+    display: inline; /* for IE */
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+    -ms-flex: 1;
+    flex-grow: 1;
+}
+.content-title:before {
+    margin-right: 0.5em;
+}
+.content-title:after {
+    margin-left: 0.5em;
+}
+
+#what-new ul {
+  width: 95%;
+  margin: 0 auto;
+  list-style: none;
+  font-size: .9rem;
+  color: #0057E2;
+}
+
+#what-new h2 {
+
+}
+
+#what-new li {
+  width: 100%;
+  display: block;
+  padding: 10px 0;
+}
+
+#what-new li + li {
+  border-top: 1px rgba(0,0,0,0.7) solid;
+}
+
+#what-new a {
+  font-size: .9rem;
+  color: rgba(0,0,0,0.87);
+  text-decoration: none;
+  text-align: center;
+  display: block;
+  padding: 10px;
 }
